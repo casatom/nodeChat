@@ -13,7 +13,11 @@ app.listen(PORT, () => {
 
 app.get("/status", (request, response) => {
   const status = {
-    Status: "Running",
+    status: "Running",
+    data:{
+        status: '500',
+        message: 'primer mensaje'
+    }
   };
 
   response.send(status);
