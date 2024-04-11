@@ -6,4 +6,4 @@ const loggear = (palabra,palabra2) => {
 
 }
 
-export default loggear;
+module.exports = {loggear}
