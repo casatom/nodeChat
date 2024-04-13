@@ -14,7 +14,7 @@ router.get("/messageSuccess", (req, res) => {
     },
   };
 
-  res.send(message);
+  res.status(200).send(message);
 });
 
 router.get("/*", (req, res) => {
@@ -26,7 +26,7 @@ router.get("/*", (req, res) => {
     },
   };
 
-  res.send(message);
+  res.status(500).send(message);
 });
 
 
